@@ -12,6 +12,8 @@ type Response struct {
 
 const increment = 1024 * 1024 * 256
 
+var bigData = make([]byte, increment)
+
 func Handler() (Response, error) {
 	fmt.Println("I'm about to use up a lot of RAM...")
 	var space []byte
