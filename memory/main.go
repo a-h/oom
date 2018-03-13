@@ -10,7 +10,7 @@ type Response struct {
 	Message string `json:"message"`
 }
 
-const increment = 1024 * 1024
+const increment = 1024 * 1024 * 256
 
 func Handler() (Response, error) {
 	fmt.Println("I'm about to use up a lot of RAM...")
